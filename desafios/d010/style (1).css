@@ -35,7 +35,7 @@
 }
 
 .titulo {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'iDroid', cursive;
     color: #071F66;
     margin: 15px;
@@ -55,7 +55,7 @@ div.video {
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: 15px;
-    padding-bottom: 59%;
+    padding-bottom: 50%;
 }
 
 div.video > iframe {
@@ -76,12 +76,15 @@ div#rodape {
 }
 
 #tit-rodape {
-    background-color: #239DFA; 
+    background-color: #071F66; 
     border-radius: 10px 10px 0px 0px; 
     padding: 7px;
     margin-left: -10px;
     margin-right: -10px;
-    
+    color: white;
+    font-family: 'Bebas', cursive;
+    letter-spacing: 1px;
+    font-weight: normal;
 }
 
 p {
@@ -169,6 +172,7 @@ footer {
     margin-bottom: -16px;
     text-align: center;
     padding: 0px 0px 0px 0px;
+    font-size: 0.8em;
 }
 
 #listas {

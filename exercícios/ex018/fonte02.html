@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'making';
+            src: url('fonts/Decision Making.otf') format('opentype'), url('fonts/Decision Making.ttf') format('truetype'); /*fonts serve para achar a fonte na pasta fonts*/
+            font-weight: normal;
+            font-style: normal;
+
+            /* Tipos de Format
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'making', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ad expedita nisi, enim error nobis quia ipsum eos porro voluptates in pariatur repellendus, 
+    facilis adipisci iusto officia maiores dolores tempora!</p>
+</body>
+</html>
+<!--Procuro a fonte, baixo ela, extraio o arquivo zip, coloco na pasta que vou usar, faço o @font face com otf ou ttf e dps só nomeio e coloco o nome da fonte no lugar que quero usar-->

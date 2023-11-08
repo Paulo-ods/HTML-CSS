@@ -177,8 +177,9 @@ footer {
 
 #listas {
     list-style-type: '\2714\0020\0020';
-    list-style-position: inside;
     columns: 2;
+    list-style-position: inside;
+    column-gap: 180px;
 }
 
 .versões {

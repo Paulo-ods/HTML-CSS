@@ -39,6 +39,7 @@
             border-collapse: collapse;
             margin-left: auto;
             margin-right: auto;
+            position: relative;
         }
 
         .position {
@@ -52,6 +53,13 @@
             font-family: var(--fonte01);
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 8px;
+            background-color: #080f26a8;;
+        }
+
         thead, tfoot {
             color: var(--cor02);
             background-color: var(--cor01);
@@ -59,6 +67,12 @@
             font-size: 3.3vh;
             font-family: var(--fonte01);
             font-style: italic;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+            background-color: var(--cor01);
         }
 
         td.num {
@@ -80,12 +94,20 @@
             overflow: hidden;
         }
 
+        /*Para o efeito de linhas zebradas descobri:
+        tbody > tr:nth-child(2n) {
+            background-color: 000;
+        }
+        Assim ele iria aplicar a cor a cada dois tr dentro de body
+        */
+
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION = Legenda da tabela
             THEAD = Cabeça da tabela
                 TR, TD, TH
             TBODY = Corpo da tabela
@@ -95,11 +117,12 @@
     -->
     <div>
         <table class="borda">
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th class="position">Posição</th>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col" class="position">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -241,7 +264,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="2">Total de habitantes</th>
+                    <th scope="row" colspan="2">Total de habitantes</th>
                     <td class="num"><strong>000000</strong></td>
                 </tr>
             </tfoot>

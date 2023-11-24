@@ -114,7 +114,9 @@
                 TR, TD, TH
             TFOOT = Footer da tabela
                 TR, TD, TH
-    -->
+    
+    <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Pesquisar por Estado...">-->
+
     <div>
         <table class="borda">
             <caption>População das Unidades Federativas</caption>
@@ -128,7 +130,7 @@
             <tbody>
                 <tr>
                     <td class="position">1</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)"> São Paulo</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank"> São Paulo</a></td>
                     <td class="num">44 411 238	</td>
                 </tr>
                 <tr  class="linha">
@@ -138,127 +140,127 @@
                 </tr>
                 <tr>
                     <td class="position">3</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)"> Rio de Janeiro</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank"> Rio de Janeiro</a></td>
                     <td class="num">16 054 524</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">4</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Bahia"> Bahia</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Bahia" target="_blank"> Bahia</a></td>
                     <td class="num">14 141 626</td>
                 </tr>
                 <tr>
                     <td class="position">5</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Paran%C3%A1"> Paraná</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Paran%C3%A1" target="_blank"> Paraná</a></td>
                     <td class="num">11 444 380</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">6</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul"> Rio Grande do Sul</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_blank"> Rio Grande do Sul</a></td>
                     <td class="num">10 882 965</td>
                 </tr>
                 <tr>
                     <td class="position">7</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Pernambuco"> Pernambuco</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Pernambuco" target="_blank"> Pernambuco</a></td>
                     <td class="num">9 058 931</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">8</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Cear%C3%A1"> Ceará</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Cear%C3%A1" target="_blank"> Ceará</a></td>
                     <td class="num">8 794 957</td>
                 </tr>
                 <tr>
                     <td class="position">9</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Par%C3%A1"> Pará</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Par%C3%A1" target="_blank"> Pará</a></td>
                     <td class="num">8 121 025</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">10</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Santa_Catarina"> Santa Catarina</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Santa_Catarina" target="_blank"> Santa Catarina</a></td>
                     <td class="num">7 610 361</td>
                 </tr>
                 <tr>
                     <td class="position">11</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Goi%C3%A1s"> Goiás</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Goi%C3%A1s" target="_blank"> Goiás</a></td>
                     <td class="num">7 056 495</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">12</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o" > Maranhão</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o"  target="_blank"> Maranhão</a></td>
                     <td class="num">6 775 805</td>
                 </tr>
                 <tr>
                     <td class="position">13</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/20px-Bandeira_da_Para%C3%ADba.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Para%C3%ADba"> Paraíba</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/20px-Bandeira_da_Para%C3%ADba.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Para%C3%ADba" target="_blank"> Paraíba</a></td>
                     <td class="num">3 974 687</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">14</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Amazonas"> Amazonas</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Amazonas" target="_blank"> Amazonas</a></td>
                     <td class="num">3 941 613</td>
                 </tr>
                 <tr>
                     <td class="position">15</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/20px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)"> Espírito Santo</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/20px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)" target="_blank"> Espírito Santo</a></td>
                     <td class="num">3 833 712</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">16</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/20px-Bandeira_de_Mato_Grosso.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Mato_Grosso"> Mato Grosso</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/20px-Bandeira_de_Mato_Grosso.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Mato_Grosso" target="_blank"> Mato Grosso</a></td>
                     <td class="num">3 658 649</td>
                 </tr>
                 <tr>
                     <td class="position">17</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/20px-Bandeira_do_Rio_Grande_do_Norte.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte"> Rio Grande do Norte</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/20px-Bandeira_do_Rio_Grande_do_Norte.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte" target="_blank"> Rio Grande do Norte</a></td>
                     <td class="num">3 302 729</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">18</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/20px-Bandeira_do_Piau%C3%AD.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Piau%C3%AD"> Piauí</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/20px-Bandeira_do_Piau%C3%AD.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Piau%C3%AD" target="_blank"> Piauí</a></td>
                     <td class="num">3 272 199</td>
                 </tr>
                 <tr>
                     <td class="position">19</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/20px-Bandeira_de_Alagoas.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Alagoas"> Alagoas</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/20px-Bandeira_de_Alagoas.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Alagoas" target="_blank"> Alagoas</a></td>
                     <td class="num">3 127 683</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">20</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/20px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)"> Distrito Federal</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/20px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)" target="_blank"> Distrito Federal</a></td>
                     <td class="num">2 817 381	</td>
                 </tr>
                 <tr>
                     <td class="position">21</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/20px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul"> Mato Grosso do Sul</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/20px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" target="_blank"> Mato Grosso do Sul</a></td>
                     <td class="num">2 757 013</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">22</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/20px-Bandeira_de_Sergipe.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Sergipe"> Sergipe</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/20px-Bandeira_de_Sergipe.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Sergipe" target="_blank"> Sergipe</a></td>
                     <td class="num">2 209 558</td>
                 </tr>
                 <tr>
                     <td class="position">23</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/20px-Bandeira_de_Rond%C3%B4nia.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia"> Rondônia</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/20px-Bandeira_de_Rond%C3%B4nia.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia" target="_blank"> Rondônia</a></td>
                     <td class="num">1 581 196</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">24</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/20px-Bandeira_do_Tocantins.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Tocantins"> Tocantins</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/20px-Bandeira_do_Tocantins.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Tocantins" target="_blank"> Tocantins</a></td>
                     <td class="num">1 511 460</td>
                 </tr>
                 <tr>
                     <td class="position">25</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/20px-Bandeira_do_Acre.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Acre"> Acre</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/20px-Bandeira_do_Acre.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Acre" target="_blank"> Acre</a></td>
                     <td class="num">830 018</td>
                 </tr>
                 <tr class="linha">
                     <td class="position">26</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/20px-Bandeira_do_Amap%C3%A1.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Amap%C3%A1"> Amapá</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/20px-Bandeira_do_Amap%C3%A1.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Amap%C3%A1" target="_blank"> Amapá</a></td>
                     <td class="num">733 759</td>
                 </tr>
                 <tr>
                     <td class="position">27</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/20px-Bandeira_de_Roraima.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Roraima"> Roraima</a></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/20px-Bandeira_de_Roraima.svg.png" alt=""><a href="https://pt.wikipedia.org/wiki/Roraima" target="_blank"> Roraima</a></td>
                     <td class="num">636 707</td>
                 </tr>
             </tbody>
@@ -270,5 +272,35 @@
             </tfoot>
         </table>
     </div>
+
+    <!--<script>
+        function filterTable() {
+    // Declare variáveis
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop através de todas as linhas da tabela e oculte as que não correspondem à pesquisa
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1]; // O índice 1 representa a coluna "Estado". Modifique conforme necessário.
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = ""; // Exibe a linha se houver correspondência
+                    } else {
+                        tr[i].style.display = "none"; // Oculta a linha se não houver correspondência
+                    }
+                }
+            }
+
+            // Scroll até a primeira linha visível
+            var firstVisibleRow = table.querySelector("tbody tr[style='']");
+            if (firstVisibleRow) {
+                table.parentNode.scrollTop = firstVisibleRow.offsetTop - table.offsetTop;
+            }
+        }
+    </script>-->
 </body>
 </html>

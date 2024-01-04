@@ -11,8 +11,16 @@
     </style>
 </head>
 <body>
+    <!--method = POST não aparece os dados informados na URL
+    Get = usa quando os dados nao forem sensiveis, nome, peso etc
+    quando quer que a URL seja compartilhavel tbm usa GET
+
+    Post = usa para dados sensiveis, senhas, cartao de credito
+    se os dados tiverem mais de 3000byte
+    se precisar enviar arquivos tipo img e etc-->
+
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="off">
+    <form action="cadastro.php" method="POST" autocomplete="off">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 

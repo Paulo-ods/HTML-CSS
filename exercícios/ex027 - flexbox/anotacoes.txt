@@ -1,0 +1,22 @@
+AULA - Direções e Eixos Flexbox CSS
+
+    --   flex direction   --
+
+ row = padrão em linha
+ row-reverse = em linha da direita para a esquerda (menus etc)
+ column = em coluna de cima para baixo
+ column-reverese = em coluna de baixo para cima
+ flex: auto; centraliza as div filha usando 100% width,
+ não permite espaço em branco dentro da div pai
+
+ (img main-axxis | cross-axxis)
+
+
+    --   flex-wrap   --
+
+nowrap = valor padrão em que o conteudo da ultima box vai quebrando
+wrap = a ultima box quebra pra baixo ao invés do conteúdo para a box ficar do tamanho original
+
+Podemos simplificar essas duas tags em uma só com shorthand
+
+flex-flow: row nowrap;

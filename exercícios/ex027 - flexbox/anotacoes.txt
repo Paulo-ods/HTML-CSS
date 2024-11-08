@@ -20,3 +20,21 @@ wrap = a ultima box quebra pra baixo ao invés do conteúdo para a box ficar do 
 Podemos simplificar essas duas tags em uma só com shorthand
 
 flex-flow: row nowrap;
+
+
+    --   justify-content   --
+
+sempre vai alinhar o conteúdo de acordo com o main-axis
+flex-start = o primeiro item sempre vai ficar grudado no main-start
+flex-end = o ultimo item sempre vai ficar grudado no main-end
+center = vai calcular automaticamente o centro, centralizando na div pai
+space-between = vai ajustar os espaços deixando o item 1 no start e o ultimo no end
+space-evenly = vai deixar os espaços entre si mas deixando um espaço antes do start e um espaço no end (n fica grudado)
+space-around = cria box e deixa as div no meio delas deixando um espaço dos lados
+
+
+    --   align-itens   --
+
+mesma situação do justify porém na transversal
+(n possui as tag space...)
+stretch = valor padrão de ponta a ponta

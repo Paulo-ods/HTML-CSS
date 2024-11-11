@@ -31,6 +31,7 @@ center = vai calcular automaticamente o centro, centralizando na div pai
 space-between = vai ajustar os espaços deixando o item 1 no start e o ultimo no end
 space-evenly = vai deixar os espaços entre si mas deixando um espaço antes do start e um espaço no end (n fica grudado)
 space-around = cria box e deixa as div no meio delas deixando um espaço dos lados
+os espaços entre os itens são o dobro do espaço de cima e de baixo
 
 
     --   align-itens   --
@@ -38,3 +39,8 @@ space-around = cria box e deixa as div no meio delas deixando um espaço dos lad
 mesma situação do justify porém na transversal
 (n possui as tag space...)
 stretch = valor padrão de ponta a ponta
+
+
+    --   align-content   -- (SOMENTE QUNDO USA WRAP)
+
+alinha os itens no eixo transversal quando eles estão empacotados, 

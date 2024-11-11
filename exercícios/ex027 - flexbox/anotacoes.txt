@@ -44,3 +44,14 @@ stretch = valor padrão de ponta a ponta
     --   align-content   -- (SOMENTE QUNDO USA WRAP)
 
 alinha os itens no eixo transversal quando eles estão empacotados, 
+
+
+    --   align-self   --
+
+somente para os filhos do display-flex
+vai direto no item para alinhar de alguma forma q n seja a padrão do pai
+sempre dentro do cross-axis
+
+        ° flex-basis
+        somente no item, quase um width
+        denomina o tamanho do item

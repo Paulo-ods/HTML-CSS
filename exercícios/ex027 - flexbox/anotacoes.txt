@@ -52,6 +52,27 @@ somente para os filhos do display-flex
 vai direto no item para alinhar de alguma forma q n seja a padrão do pai
 sempre dentro do cross-axis
 
-        ° flex-basis
-        somente no item, quase um width
-        denomina o tamanho do item
+
+
+    -- FLEX - para elementos filhos --
+
+° flex-basis
+somente no item, quase um width
+denomina o tamanho do item
+
+° flex-grow
+é o quanto pode crescer
+padrao 0
+(0 não | 1 sim)
+° flex-shrink
+é o quanto pode diminuir/encolher
+padrao 1
+0 | 1 | 0 |   -> nesse caso somente o do meio diminui
+
+flex = flex grow + fle3x shrink + flex-basis
+
+flex-initial: valor padrão inicial 
+flex: auto:  maximo de responsividade 
+
+
+ 
